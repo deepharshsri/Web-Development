@@ -1,0 +1,18 @@
+ul{
+ color:darkblue;
+}
+ol{
+    color:red
+}
+ul>li  {
+font-style: italic;
+}
+ul ol{
+    font-weight: bolder;
+}
+ul li ol ul {
+    font-family: cursive;
+}
+ul~ol+ol{
+    background-color: violet;
+}

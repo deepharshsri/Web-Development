@@ -9,7 +9,12 @@ div{
 }
 .cl1{
     background-color: lightcoral;
+ font-display: block;
 }
 #id1{
     background-color: lightsteelblue;
+}
+#id1,
+ .cl2{
+border: 5px solid black;
 }
