@@ -1,0 +1,13 @@
+div {
+    background-color: green;
+    margin: 20px;
+    border: 5px solid black;
+
+}
+#id2{
+    position: fixed;
+}
+#id3{
+    position: sticky;
+    bottom: 100px;
+}

@@ -2,7 +2,7 @@ ul ul{
     display: none;
 }
 
-li:hover ul {
+li:hover>ul {
    color: green;
     display: block;
 }

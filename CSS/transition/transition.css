@@ -1,0 +1,13 @@
+div{
+    margin: 150px;
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+}
+div:active{
+    height: 60px;
+    width: 60px;
+    margin-left: 1000px;
+    transform: rotate(180deg);
+    transition: transform 5s,margin 2s  ;
+}

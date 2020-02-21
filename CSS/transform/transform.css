@@ -1,0 +1,14 @@
+#div1{
+    height: 70px;
+    width: 70px;
+    margin:150px;
+    border: 5px solid black;
+    background-color:red;
+    /*transform: translate(30px,30px);*/
+    /* transform: scale(0.5);*/
+    /*transform: skew(60deg,0);*/
+   /* transform: rotateX(180deg);*/
+   transform: scaleY(-1);    
+
+
+}

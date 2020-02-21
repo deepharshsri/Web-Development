@@ -1,0 +1,32 @@
+
+div{
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+
+}
+div{
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+
+
+}
+@keyframes slide{
+    from{
+        margin-left:10px;
+    transform: rotate(180deg);
+    }
+    50%{
+        margin-top: 400px;
+        background-color: chartreuse;
+    }
+    to{
+       margin-left: 500px;
+    }
+}
+div:hover+div{
+    animation-name: slide,bounce;
+    animation-duration:8s,3s ;
+/*animation-play-state: running;*/
+}
