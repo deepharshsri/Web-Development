@@ -1,0 +1,33 @@
+.container{
+    display:flex ;
+    background-color: blueviolet;
+    height: 400px;
+    flex-wrap: nowrap;
+    /*flex-wrap: wrap-reverse;
+    flex-direction: row;*/
+ justify-content: space-around;
+  justify-content:space-between;
+   align-items: flex-start;
+   align-content: space-around;
+   align-content: space-between;
+  }
+.item{
+ background-color: aqua;
+ margin: 20px;
+ height: 40px;
+ width: 40px;
+ padding: 10px;
+ flex-shrink: 1;
+}
+#item11{
+  order: 1;
+  flex-shrink: 0;
+}
+
+#item12{
+  order: 2;
+}
+#item13{
+  order: -1;
+align-self: flex-end;
+}
