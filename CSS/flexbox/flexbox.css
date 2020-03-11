@@ -1,10 +1,10 @@
-.container{
+/*.container{
     display:flex ;
     background-color: blueviolet;
     height: 400px;
     flex-wrap: nowrap;
-    /*flex-wrap: wrap-reverse;
-    flex-direction: row;*/
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
  justify-content: space-around;
   justify-content:space-between;
    align-items: flex-start;
@@ -30,4 +30,27 @@
 #item13{
   order: -1;
 align-self: flex-end;
+}*/
+.container{
+  display: flex;
+background-color: cadetblue;
+height: 600px;
+flex-wrap: wrap;
+align-items: flex-end;
+align-content: flex-end;
+}
+.item{
+  background-color: brown;
+  margin: 30px;
+  padding: 10px;
+  border: 2px solid black;
+  width: 60px;
+  height: 60px;
+  flex-basis:60px;
+}
+#item13{
+  order: -1;
+}
+#item11{
+  order:9;
 }
