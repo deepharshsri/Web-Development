@@ -1,0 +1,26 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color:indianred ;
+}
+@media (max-width:1000px){
+    #id1{
+       width: 600px;
+     transition: width 5s;
+       background-color:burlywood ;
+    }
+@media (max-width:750px){
+    #id1{
+       width: 600px;
+     transition: width 5s;
+       background-color:purple ;
+    }
+}
+@media (max-width:500px){
+    #id1{
+       width: 300px;
+     transition: width 5s;
+       background-color:yellowgreen ;
+    }
+}
+

@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;;
+
+}
+.item{
+    background-color: cyan;
+    flex-grow: 1;
+}
+.content{
+    background-color: lightcyan;
+}
+@media (min-width:500px) and (max-width:1000px){
+    .content{
+        width: 300px;
+        background-color: brown;
+        padding: 50px;
+        border: 10px solid black;
+    }
+      .sidebar{
+          padding: 10px;
+          border:2px solid brown;
+      }
+}
+@media (not) and (color){
+
+}
