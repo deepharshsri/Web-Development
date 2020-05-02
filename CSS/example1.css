@@ -1,0 +1,35 @@
+/* .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    flex-grow: 1;
+    background-color: burlywood;
+}
+.sidebar{
+    
+    background-color: cornflowerblue;
+}
+.content{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+@media (max-width:500px){
+    .content{
+        background-color: lightblue;
+    }
+    ul li{
+        display: inline;
+        width: 100px;
+    }
+
+} */
+div{
+    background-color: lightblue;
+}
+div+div {
+    background-color: lightgreen;
+}
+ body div {
+display: inline;
+}

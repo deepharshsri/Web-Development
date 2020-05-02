@@ -35,7 +35,7 @@ align-self: flex-end;
   display: flex;
 background-color: cadetblue;
 height: 600px;
-flex-wrap: wrap;
+/* flex-wrap: wrap; */
 justify-content: space-between;
 }
 .item{
@@ -45,11 +45,18 @@ justify-content: space-between;
   border: 2px solid black;
   width: 60px;
   height: 60px;
+  flex-shrink: 1;
+
+}
+#id3{
+  flex-shrink: 2;
+
   flex-basis:160px;
+
+  /* order: -1; */
 }
-#item13{
-  order: -1;
-}
-#item11{
-  order:9;
+#id2{
+  flex-shrink: 4;
+
+  /* order:9; */
 }
