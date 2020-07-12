@@ -5,12 +5,13 @@ function foo(a){
     // console.log(this==global)// true bcz we are calling function and by this time "this" will refer to Global object .
    
        this.a=a
-         let b=13 
+       b=13 
        console.log(this==global)
        return 10;
 
 
 }
+// console.log(a)
 let o1=foo("harry potter")
 console.log(a)
 console.log(b)

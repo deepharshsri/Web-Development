@@ -1,6 +1,7 @@
 let p={
    a:10
 }
+p.prototype.f=10;
 let q=Object.create(p)
 q.b=20
 
@@ -14,11 +15,7 @@ console.log(r)
 console.log(r.c)
 console.log(r.a)
 console.log(r.b)
-console.log(r.__proto__.__proto__==p)
-console.log(r.__proto__==q)
-console.log(q.c)
-console.log(r.a)
+console.log(r.__proto__.__proto__==p) // true
+console.log(r.__proto__==q) // true
 
-let a="ngksengks"
-console.log(a.__proto__.__proto__) 
 
