@@ -21,11 +21,11 @@ function compare(a,b){
 // console.log(sortedArray)
 
 let sortedArray=arr2.sort(function(a,b){    //another way to use any function 
-    // console.log(arr2)
-    // console.log(a+" & "+b)
-    return a-b
+    console.log(arr2)
+    console.log(a+" & "+b)
+    return a-b>0
 })
-// console.log(arr2)
+console.log(arr2)
 
 //To print array in decsendingorder:
 
@@ -38,11 +38,14 @@ let sortedArray1=arr2.sort(function(a,b){    //another way to use any function
 
 
 // TO print array on the basis of "UNIT DIGIT" 
-console.log(arr2)
+// console.log(arr2)
 
 let sortedArray3=arr2.sort(function(a,b){    //another way to use any function 
    
     return (a%10)-(b%10)
 })
 
-console.log(sortedArray3)
+// console.log(sortedArray3)
+
+
+

@@ -20,7 +20,11 @@ console.log(   Fruit("apple","sweet"))
 function Fruit(name, color){
   this.name=name;
   this.color=color;
-  return "hello"
+  let fruitfunction=()=>{
+    console.log( this.name+this.color)
+  }
+  
+
 }
 class taste{
   constructor(name,taste){
@@ -28,23 +32,29 @@ class taste{
     this.taste=taste
   }
 
+  fun(){
+    setTimeout(function(){
+    console.log("Fruit name " +this.name)
+  },100);
+  }
+
 }
-// let gg=Fruit("Kiwi","okok")
+let gg=new Fruit("Kiwi","okok")
 // console.log(gg)
 
 
 
 
-let f1=new Fruit("orange","orange")
-console.log(f1)
-let f2=new Fruit("apple","sweet")
-console.log(f2.name)
-let f3=Fruit("kiwi","kadwa")
-console.log(f3.color)
-console.log(f3)
+// let f1=new Fruit("orange","orange")
+// console.log(f1)
+// let f2=new Fruit("apple","sweet")
+// console.log(f2.name)
+// let f3=Fruit("kiwi","kadwa")
+// console.log(f3.color)
+// console.log(f3)
 
-let f4=Fruit
-console.log(f4())
+// let f4=Fruit
+// console.log(f4())
 
 // let create a simple object :\
 
@@ -55,3 +65,10 @@ console.log(f4())
 // console.log(typeof f5)
 
 //  console.log(color)
+
+let fruit=new taste("aloo","meetha")
+// fruit.fun()
+console.log(typeof fruit)
+// console.log(typeof obj)
+console.log(obj.c())
+gg.fruitfunction()

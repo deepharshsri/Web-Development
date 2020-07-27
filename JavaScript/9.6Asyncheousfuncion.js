@@ -1,38 +1,41 @@
-function downloadFile(url,downloaded){
-// we are going to download a file from given  path 
-// 3 sec fake delay means not actually downloading it.
-console.log("we are downloading file from: " + url);
-setTimeout(function(){
-     let downloadedPath=":C:\\Downloads\\" + url.split('/').pop()
-     console.log("The file has been downloaded to : " + downloadedPath)
-     downloaded(downloadedPath)
- },3000)
+function downloadfile(url,downloaded){
+    // fake delay of 3 sec to Download file loguc 
+
+    console.log("Downloading has been start from : "+url);
+    setTimeout(()=>{
+        let downloadedPath="C://Downloads/"+url.split('\\').pop();
+        console.log("The file has been downloaded to : "+ downloadedPath);
+              downloaded(downloadedPath);
+    },3000)
+}
+function resizefile(filePath,resized){
+    // fake delay of 3 sec to Resize file loguc 
+
+    console.log("Resizing has been started from : "+ filePath)
+     setTimeout(( )=>{
+       let resizedPath=filePath.split('.')[0]+"-resized."+filePath.split(".")[1];
+       console.log("The file has been resized to : "+resizedPath)
+       resized(resizedPath)
+     },3000)
+}
+function uploading(resizedPath,uploaded){
+    // fake delay of 3 sec to Upload file loguc 
+
+
+    var url= "http:cb\\upload\\" 
+    console.log("Uploading has been started to "+url+resizedPath.split('/').pop());
+    setTimeout(()=>{
+        let uploadPath=url+resizedPath.split('/').pop();
+         console.log("The file has been uploaded successfullt to : "+uploadPath);
+         uploaded();
+    },3000)
 }
 
-downloadFile("https//google.com/logo.png", function(downloadedPath){
-     resizeFile(downloadedPath,function(resizedPath){
-         uploadFile(resizedPath,function(){    
-           console.log("The file has been uploaded successfully") 
-         })
-     })
+
+downloadfile("https:\\www.google.com\\logo.png",(downloadedPath)=>{
+    resizefile(downloadedPath,(resizedPath)=>{
+        uploading(resizedPath,()=>{
+            console.log("Done")
+        })
+    })
 })
- 
-
-    function resizeFile(downloadedPath,resizing){
-        // resizePath will fake delay of 3 second
-        console.log("We are resizing the file from path : " +downloadedPath)
-        setTimeout(function(){
-                let resizedPath=downloadedPath.split('.')[0]+"-resized."+downloadedPath.split('.')[1];
-            console.log("The file has been resized to : "+resizedPath )
-            resizing(resizedPath)
-        },3000)
-      
-    }
-
-
-    function uploadFile(resizedPath,uploading){
-        // uploadFile will also get a fake delay of 3 sec
-        let uploadPath="\\cb:\\upload\\"+resizedPath.split('\\').pop();
-        console.log("We are uploading file to : "+ uploadPath)
-        setTimeout(uploading,3000);
-    }

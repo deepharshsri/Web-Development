@@ -4,7 +4,7 @@ div{
     width: 80px;
     background-color: blue;
 }
-div:active{
+div:hover{
     height: 60px;
     width: 60px;
     margin-left: 1000px;
