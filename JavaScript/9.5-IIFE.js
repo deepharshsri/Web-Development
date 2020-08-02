@@ -63,10 +63,14 @@
     baz: 1 
             }
 
-            console.log(foo.bar());
+            // console.log(typeof foo.bar);
+
+let c=foo.bar()
+console.log(c);
 
     (function(x){
-     console.log(typeof x());
-     })(foo.bar)
+      let a=x
+     console.log(a);
+     })(foo.baz)
 
     
