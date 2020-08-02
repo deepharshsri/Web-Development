@@ -51,9 +51,22 @@
   
 //   console.log("after 1 sec")
   
-  for(var i = 0; i <3; i++) {
-   setTimeout(console.log,1000,i)
-  }
-  console.log("after 1 sec")
+  // for(var i = 0; i <3; i++) {
+  //  setTimeout(console.log,1000,i)
+  // }
+  // console.log("after 1 sec")
   
-  
+  var foo = { 
+    bar: function() { 
+      return this.baz
+     },
+    baz: 1 
+            }
+
+            console.log(foo.bar());
+
+    (function(x){
+     console.log(typeof x());
+     })(foo.bar)
+
+    

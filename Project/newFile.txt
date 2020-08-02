@@ -1,0 +1,5 @@
+cat : 2
+dog : 2
+Monkey : 1
+Donkey : 1
+Lion : 1
