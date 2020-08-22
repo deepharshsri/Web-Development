@@ -45,32 +45,44 @@
 //   (function (i){
 //     setTimeout(function(){
 //      console.log(i)
-//    },1000)
-//     })(i);
-//   } 
+// //    },1000)
+// //     })(i);
+// //   } 
   
-//   console.log("after 1 sec")
+// //   console.log("after 1 sec")
   
-  // for(var i = 0; i <3; i++) {
-  //  setTimeout(console.log,1000,i)
-  // }
-  // console.log("after 1 sec")
+//   // for(var i = 0; i <3; i++) {
+//   //  setTimeout(console.log,1000,i)
+//   // }
+//   // console.log("after 1 sec")
   
   var foo = { 
     bar: function() { 
       return this.baz
      },
-    baz: 1 
-            }
+    baz: 29 
+            };
 
-            // console.log(typeof foo.bar);
-
-let c=foo.bar()
-console.log(c);
+        
+            // console.log(typeof nu());
+let nu=function(){
+  return 33
+};
+// let c=foo.bar()
+// console.log(c);
 
     (function(x){
       let a=x
-     console.log(a);
-     })(foo.baz)
+     console.log( a());
+     })(nu)
 
-    
+// let fs = require('fs');
+
+// console.log('1');
+
+// fs.readFile('test.txt', 'utf8', function(error, data) { if (error) { throw error; }
+
+// console.log('2');
+// });
+
+// console.log('3');

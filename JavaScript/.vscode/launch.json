@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/hof_example2.js"
+            "program": "${workspaceFolder}/hof_example.js"
         }
     ]
 }
