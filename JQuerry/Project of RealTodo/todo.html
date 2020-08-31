@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="jquerry.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.js"></script>
+    <link rel="stylesheet" href="script.css">
+    <title>Document</title>
+</head>
+<body>
+     <h1 align="center" >TodoList</h1>
+     
+    <div class="row " style="margin-top: 50px;" >
+        <div class="col-2"></div>
+         <div class="col-md-6 col-sm-8">
+            <input type="text" class="form-control " id="task" placeholder="Add New Task"  aria-label="Username" aria-describedby="basic-addon1" >
+        </div>
+        <div class="col-md-4  ">
+        <div class="row">
+        <div class="col-md-5 col-sm m-1" >
+            <button type="button" class="btn btn-success btn-block  " disabled id="addBtn"><i class="fas fa-plus"></i> Add</button>
+        </div>
+        <div class="col-md-5 col-sm m-1 " >
+            <button type="button" class="btn btn-danger btn-block " disabled id="resetBtn"><i class="fas fa-trash-restore-alt"></i> Clear_Task</button>
+        </div>
+         </div>
+         <div class="row">
+        <div class="col-md-5 col-sm m-1" >
+            <button type="button" class="btn btn-warning btn-block " disabled id="sortBtn"><i class="fas fa-sort"></i> Sort</button>
+        </div>
+        <div class="col-md-5 col-sm m-1">
+            <button type="button" class="btn btn-dark btn-block " disabled id="clrBtn">Clean_Up</button>
+        </div>
+    </div>
+    </div>
+         
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-6 ">
+          <ul class="list-group" id="ulTask">
+          </ul>
+        </div>
+        </div>
+
+
+</body>
+</html>
