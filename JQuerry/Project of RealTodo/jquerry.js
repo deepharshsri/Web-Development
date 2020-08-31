@@ -1,7 +1,7 @@
 $(()=>
 {
     let addBtn=$('#addBtn')
-    let resetBtn=$('#resetBtn')
+    let delBtn=$('#resetBtn')
     let list=$('.list-group')
     let task=$('#task')
     let sortBtn=$('#sortBtn')
@@ -25,7 +25,7 @@ $(()=>
 
     function toggleBtn(){
         addBtn.prop('disabled',task.val()=='')
-        resetBtn.prop('disabled',task.val()=='') 
+        delBtn.prop('disabled',list.children().length<1) 
         clrBtn.prop('disabled',$('#ulTask .done').length<1)
         sortBtn.prop('disabled',$('#ulTask .done').length<1)
     }
@@ -65,7 +65,7 @@ $(()=>
 
     clrBtn.click(()=>{
         clearDoneTask()
-        toggleBtn()
+        toggleBtn() 
     })
 
 
